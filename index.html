@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project Name | A clean academic project page</title>
+
+  <meta name="description" content="Project page for Project Name. Add your abstract, results, and links here." />
+  <meta property="og:title" content="Project Name" />
+  <meta property="og:description" content="A clean academic project page template on GitHub Pages." />
+  <meta property="og:type" content="website" />
+  <!-- 你可以放一个预览图 -->
+  <meta property="og:image" content="assets/teaser.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="badge">Conference / Journal • Year</p>
+      <h1 class="title">Project Name: Subtitle goes here</h1>
+
+      <p class="authors">
+        <a href="#" target="_blank" rel="noreferrer">Author A</a><sup>1</sup>,
+        <a href="#" target="_blank" rel="noreferrer">Author B</a><sup>2</sup>,
+        <a href="#" target="_blank" rel="noreferrer">Author C</a><sup>1</sup>
+      </p>
+
+      <p class="affiliations">
+        <span><sup>1</sup>Institute / University</span>
+        <span class="dot">•</span>
+        <span><sup>2</sup>Company / Lab</span>
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="assets/pppaper.pdf" target="_blank" rel="noreferrer">Paper (PDF)</a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">Dataset</a>
+        <a class="btn" href="#citation">Citation</a>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/teaser.jpg" alt="Teaser figure for Project Name" />
+        <figcaption>
+          Teaser: 一句话描述你的方法/贡献（可选）。
+        </figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section id="abstract" class="section">
+        <h2>Abstract</h2>
+        <p>
+          这里放摘要。建议 4–8 句，包含：问题是什么、你做了什么、核心贡献、关键结果。
+          这是一个静态项目页模板：HTML + CSS，适合部署到 GitHub Pages。
+        </p>
+
+        <div class="callouts">
+          <div class="card">
+            <h3>Key idea</h3>
+            <p>一句话讲清楚你方法的核心直觉。</p>
+          </div>
+          <div class="card">
+            <h3>Contributions</h3>
+            <ul>
+              <li>贡献 1：提出 xxx</li>
+              <li>贡献 2：构建数据集 xxx</li>
+              <li>贡献 3：在基准上提升 xx%</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="method" class="section">
+        <h2>Method</h2>
+        <p>
+          这里讲方法。可以用“输入→模块→输出”的方式写，配一张 method 图。
+        </p>
+
+        <figure class="figure">
+          <img src="assets/method.png" alt="Method overview" />
+          <figcaption>Method overview: 这张图解释你的 pipeline。</figcaption>
+        </figure>
+      </section>
+
+      <section id="results" class="section">
+        <h2>Results</h2>
+        <p>这里展示结果：定量表格、可视化对比、消融实验等。</p>
+
+        <div class="grid-2">
+          <figure class="figure compact">
+            <img src="assets/results.png" alt="Qualitative results" />
+            <figcaption>Qualitative results: 示例可视化。</figcaption>
+          </figure>
+
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul>
+              <li>在任务 A 上提升 +X</li>
+              <li>在任务 B 上提升 +Y</li>
+              <li>推理速度 / 参数量 / 数据效率 等亮点</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section">
+        <h2>Resources</h2>
+        <div class="resources">
+          <a class="resource" href="assets/paper.pdf" target="_blank" rel="noreferrer">
+            <span class="resource-title">Paper</span>
+            <span class="resource-desc">PDF version of the paper</span>
+          </a>
+          <a class="resource" href="#" target="_blank" rel="noreferrer">
+            <span class="resource-title">Code</span>
+            <span class="resource-desc">GitHub repository</span>
+          </a>
+          <a class="resource" href="#" target="_blank" rel="noreferrer">
+            <span class="resource-title">Dataset</span>
+            <span class="resource-desc">Download / instructions</span>
+          </a>
+          <a class="resource" href="#" target="_blank" rel="noreferrer">
+            <span class="resource-title">Model</span>
+            <span class="resource-desc">Weights / checkpoints</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="citation" class="section">
+        <h2>Citation</h2>
+        <p>如果你用到了我们的工作，请引用：</p>
+
+        <div class="codeblock">
+          <pre id="bibtex"><code>@inproceedings{yourkey2026project,
+  title     = {Project Name: Subtitle goes here},
+  author    = {Author A and Author B and Author C},
+  booktitle = {Proceedings of ...},
+  year      = {2026}
+}</code></pre>
+          <button class="copy" type="button" data-copy-target="bibtex">Copy BibTeX</button>
+        </div>
+      </section>
+
+      <section id="ack" class="section">
+        <h2>Acknowledgements</h2>
+        <p>
+          可写致谢、资助信息。也可以写“页面模板参考了某些 project page”。
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>
+          © <span id="year"></span> Project Name • Built with pure HTML/CSS • Hosted on GitHub Pages
+        </p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

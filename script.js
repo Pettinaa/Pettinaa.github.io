@@ -7,7 +7,7 @@
       await navigator.clipboard.writeText(text);
       return true;
     } catch (e) {
-      // 兼容性降级
+      
       const ta = document.createElement("textarea");
       ta.value = text;
       ta.style.position = "fixed";
